@@ -67,12 +67,16 @@ function generateRandomName(namesFromFile) {
 function showRandomNotification(namesFromFile) {
   const name = generateRandomName(namesFromFile);
   const value = `R$ ${(Math.random() * 50).toFixed(2)}`;
-  const time = Math.floor(Math.random() * (5000 - 1000 + 1)) + 1000;
+  const baseTime = 5000;
+  const extraTime = Math.floor(Math.random() * 6000);
+
+  const time = baseTime + extraTime;
 
   $.notify(`${name} ganhou ${value}`, "success");
 
   setTimeout(() => showRandomNotification(namesFromFile), time);
 }
+
 
 const namesFileUrl = "/resources/names.txt";
 
