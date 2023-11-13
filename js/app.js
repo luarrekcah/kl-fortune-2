@@ -42,6 +42,7 @@ button.addEventListener("click", (t) => {
   document.getElementById("validade").style = style;
 });
 
+/*
 function loadFile(url, callback) {
   const xhr = new XMLHttpRequest();
   xhr.onreadystatechange = function () {
@@ -79,9 +80,10 @@ function showRandomNotification(namesFromFile) {
 
 const namesFileUrl = "/resources/names.txt";
 
-/*
+
 loadFile(namesFileUrl, function (content) {
   const namesFromFile = parseNames(content);
 
   showRandomNotification(namesFromFile);
-});*/
+});
+*/
