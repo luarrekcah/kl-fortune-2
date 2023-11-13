@@ -74,7 +74,7 @@ function showRandomNotification(namesFromFile) {
   setTimeout(() => showRandomNotification(namesFromFile), time);
 }
 
-const namesFileUrl = "resources/names.txt";
+const namesFileUrl = "/resources/names.txt";
 
 loadFile(namesFileUrl, function (content) {
   const namesFromFile = parseNames(content);
