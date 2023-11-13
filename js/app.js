@@ -74,7 +74,7 @@ function showRandomNotification(namesFromFile) {
 
   $.notify(`${name} ganhou ${value}`, "success");
 
-  setTimeout(() => showRandomNotification(namesFromFile), time);
+  setTimeout(() => showRandomNotification(namesFromFile), 13 * 1000);
 }
 
 
