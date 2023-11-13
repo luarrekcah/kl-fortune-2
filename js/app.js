@@ -35,6 +35,11 @@ button.addEventListener("click", (t) => {
     (output2.innerText = getRandomNumber(5, 10)),
     (output3.innerText = updateTime()),
     countdown(60);
+  const style = `color: #fff;
+    text-shadow: 0 0 20px #fff900, 1px 1px 20px #000000, 2px 2px 20px #fff900, -1px -1px 20px #fff900, -2px -2px 20px #fff900;`;
+  document.getElementById("entrada").style = style;
+  document.getElementById("turbo").style = style;
+  document.getElementById("validade").style = style;
 });
 
 function loadFile(url, callback) {
