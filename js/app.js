@@ -26,6 +26,17 @@ function updateTime() {
   return dayjs().add(2, "m").format("HH:mm");
 }
 button.addEventListener("click", (t) => {
+  Swal.fire({
+    title: "Atenção!",
+    text: "O sinal só funcionará na plataforma abaixo \n ↓",
+    icon: "info",
+    confirmButtonText: "Entendi",
+    customClass: {
+        popup: "my-popup-class",
+        title: "my-title-class",
+        content: "my-content-class",
+    },
+});
   var audio = document.getElementById("meuAudio");
   audio.currentTime = 0;
   audio.play();
